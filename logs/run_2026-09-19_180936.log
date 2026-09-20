@@ -1,0 +1,22 @@
+2026-09-19 18:09:36,745 [INFO] Start weekly report run
+2026-09-19 18:09:39,662 [INFO] Fetched 22 open invoices
+2026-09-19 18:09:39,662 [INFO] Grouped into 18 customer reports
+2026-09-19 18:09:41,583 [INFO] Fetched details for 18 customers
+2026-09-19 18:09:41,962 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:42,296 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:42,631 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:43,016 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:43,344 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:43,674 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:44,008 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:44,331 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:44,677 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:44,992 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:45,308 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:45,622 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:45,951 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:46,283 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:46,633 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:46,974 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:47,292 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-09-19 18:09:47,293 [INFO] Weekly report run complete
