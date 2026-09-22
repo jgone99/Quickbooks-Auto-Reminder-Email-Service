@@ -2,6 +2,7 @@ from collections import defaultdict
 from pprint import pprint
 from logger import setup_logging
 import logging
+import mimetypes
 
 setup_logging()
 
@@ -57,7 +58,11 @@ def send_reminder_emails_by_customer(reports: dict, customer_details: dict):
             logging.warning(f"No email on file for customer {customer_name} (ID {customer_id})")
             continue
 
-        result = send_email(customer_email, "", "")
+        spreadsheet = create_spreadsheet(report)
+        file_name = f"Invoice_Report_({customer_name}).xlsx"
+        spreadsheet.save(file_name)
+
+        result = send_email(customer_email, "", "", file_name)
 
         if result is not None:
             logging.info(f"Sent reminder to {customer_name} (ID {customer_id})")
