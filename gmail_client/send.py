@@ -15,7 +15,7 @@ def _get_service():
         _service = build("gmail", "v1", credentials=creds)
     return _service
 
-def send_email(to: str, subject: str, body: str, attachment_filename) -> dict | None:
+def send_email(to: str, subject: str, body: str, attachment_filename: str = None) -> dict | None:
     service = _get_service()
     try:
         mime_message = EmailMessage()
@@ -27,13 +27,14 @@ def send_email(to: str, subject: str, body: str, attachment_filename) -> dict | 
         # text
         mime_message.set_content(body)
 
-        # attachment
-        type_subtype, _ = mimetypes.guess_type(attachment_filename)
-        maintype, subtype = type_subtype.split('/')
+        if attachment_filename:
+            # attachment
+            type_subtype, _ = mimetypes.guess_type(attachment_filename)
+            maintype, subtype = type_subtype.split('/')
 
-        with open(attachment_filename, 'rb') as fp:
-            attachment_data = fp.read()
-        mime_message.add_attachment(attachment_data, maintype, subtype)
+            with open(attachment_filename, 'rb') as fp:
+                attachment_data = fp.read()
+            mime_message.add_attachment(attachment_data, maintype, subtype)
         
         # encoded message
         encoded_message = base64.urlsafe_b64encode(mime_message.as_bytes()).decode()
@@ -50,8 +51,6 @@ def send_email(to: str, subject: str, body: str, attachment_filename) -> dict | 
         # )
 
         # print(f'Message Id: {send_message["id"]}')
-
-        print("Would have sent:", create_message['raw'])
 
         return create_message
 

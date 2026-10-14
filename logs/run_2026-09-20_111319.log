@@ -1,5 +1,0 @@
-2026-09-20 11:13:20,906 [INFO] Start weekly report run
-2026-09-20 11:13:24,299 [INFO] Fetched 22 open invoices
-2026-09-20 11:13:24,299 [INFO] Grouped into 18 customer reports
-2026-09-20 11:13:25,088 [INFO] Fetched details for 18 customers
-2026-09-20 11:13:25,277 [INFO] Please visit this URL to authorize this application: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=383417534193-4jch22r2bsd9ahhbjkl31jmprbma6l7m.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A52257%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.send&state=GhL038CtK4rcvfwBax6GAJs49PEoWU&code_challenge=G8CtyyoV0Ifc4oacJIkfzv1_E03LU-bm12WyOwUs7M0&code_challenge_method=S256&access_type=offline
