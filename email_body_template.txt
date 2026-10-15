@@ -3,7 +3,7 @@ Hi {customer_name},
 Attached is your weekly invoice summary for {business_name}.
 
 Open Balance: ${total_balance}
-Due Within 7 Days: ${due_soon_balance}
+Due Within {due_soon_days} Days: ${due_soon_balance}
 Overdue: ${overdue_balance}
 
 If you have any questions about your account, please don't hesitate to reach out.

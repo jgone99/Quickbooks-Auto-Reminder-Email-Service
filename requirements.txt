@@ -1,0 +1,8 @@
+google-api-python-client==2.200.0
+google-auth-oauthlib==1.4.1
+google-auth==2.58.0
+intuit-oauth==1.2.7
+python-dotenv==1.2.3
+requests==2.34.2
+urllib3==2.7.0
+XlsxWriter==3.2.9
