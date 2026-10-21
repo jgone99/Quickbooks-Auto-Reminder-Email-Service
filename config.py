@@ -39,6 +39,7 @@ REQUIRED_ENV_VARS = [
     "QBO_REALM_ID",
     # receives the log of every weekly run
     "RUN_LOG_RECIPIENT",
+    "BUSINESS_NAME"
 ]
 
 # when set in .env, every customer email goes to this address instead, so a live
@@ -51,7 +52,7 @@ REQUEST_TIMEOUT_SECONDS = 30
 QBO_MAX_RESULTS = 1000
 
 # shown in the email subject and body
-BUSINESS_NAME = "USA Lock and Key"
+BUSINESS_NAME = os.getenv("BUSINESS_NAME")
 EMAIL_SUBJECT = f"Weekly Invoice Summary - {BUSINESS_NAME}"
 
 # invoices due within this many days (and not yet overdue) count as "due soon"
